@@ -1,0 +1,19 @@
+import pyautogui
+import time
+
+pyautogui.PAUSE = 0.5
+
+pyautogui.hotkey('win', 'r') # hotkey permite você apertar duas teclas ao mesmo tempo
+
+time.sleep(1)
+
+pyautogui.write('calc')
+pyautogui.press('enter')
+time.sleep(2)
+
+pyautogui.press('8')
+pyautogui.press('add')
+pyautogui.press('2')
+pyautogui.press('enter')
+
+time.sleep(3)

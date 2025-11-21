@@ -1,0 +1,24 @@
+# Desenhar um objeto
+# após a execução do código abra um bloco de notas para o desenho ser criado
+
+import pyautogui
+import time
+
+pyautogui.press("Win")
+time.sleep(1)
+pyautogui.write("Desenhando com pyautogui")
+pyautogui.press("Enter")
+time.sleep(2)
+
+arvore = [
+"    ^    "
+"   ^^^   "
+"  ^^^^^  "
+"   |||   "
+"   |||   "
+]
+
+for linha in arvore:
+    pyautogui.write(linha, interval=0.1)
+    pyautogui.press("Enter")
+print("Desenho da árvore concluído!")
